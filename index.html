@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bo Cao's Linked Data</title>
+</head>
+<body>
+  <header>
+    <h1>Bo Cao's Linked Data Page</h1>
+  </header>
+
+  <main>
+    <script type="application/ld+json">
+        {
+            @prefix schema: <http://schema.org/> .
+            <https://github.com/Bocaopubliq> a schema:Person ;
+                schema:name "Bo Cao" ;
+                schema:jobTitle "Data Engineer" ;
+                schema:email "bo.cao@publiq.be" ;
+                schema:affiliation [
+                    a schema:Organization ;
+                    schema:name "Publiq"
+                ] .
+        }
+        </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bo Cao</p>
+  </footer>
+</body>
+</html>
