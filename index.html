@@ -14,15 +14,21 @@
   <main>
     <script type="application/ld+json">
         {
-            @prefix schema: <http://schema.org/> .
-            <https://github.com/Bocaopubliq> a schema:Person ;
-                schema:name "Bo Cao" ;
-                schema:jobTitle "Data Engineer" ;
-                schema:email "bo.cao@publiq.be" ;
-                schema:affiliation [
-                    a schema:Organization ;
-                    schema:name "Publiq"
-                ] .
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Bo Cao",
+          "jobTitle": "Data Engineer",
+          "email": "bo.cao@publiq.be",
+          "attended": {
+            "@type": "Course",
+            "@id": "https://pietercolpaert.be/teaching/lds/#2024-2025",
+            "name": "Linked Data and Solid 2024-2025",
+            "instructor": {
+              "@type": "Person",
+              "@id": "https://pietercolpaert.be",
+              "name": "Pieter Colpaert"
+            }
+          }
         }
         </script>
   </main>
