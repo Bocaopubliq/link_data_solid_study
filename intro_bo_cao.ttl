@@ -1,0 +1,9 @@
+@prefix schema: <http://schema.org/> .
+<https://github.com/Bocaopubliq> a schema:Person ;
+    schema:name "Bo Cao" ;
+    schema:jobTitle "Data Engineer" ;
+    schema:email "bo.cao@publiq.be" ;
+    schema:affiliation [
+        a schema:Organization ;
+        schema:name "Publiq"
+    ] .
